@@ -55,26 +55,26 @@
             bindings = <
 &kp ESC    &kp AT          &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp STAR         &mt COLON SEMICOLON  &kp BACKSPACE
 &kp TAB    &kp EQUAL       &kp SQT   &trans    &trans       &kp BSLH   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE             &kp ENTER
-&kp TILDE  &kp A           &kp DQT   &trans    &trans       &kp LBKT   &kp LPAR        &kp RPAR         &kp RBKT             &trans
+&kp TILDE  &kp A           &kp DQT   &trans    &trans       &kp LBKT   &kp LPAR        &kp RPAR         &kp RBKT             &to 3
 &to 0      &kp LEFT_SHIFT                                                                               &kp LEFT_ALT         &to 2
             >;
         };
 
-        right_layer {
+        Numbers {
             bindings = <
-&kp ESCAPE  &kp C_PP      &kp C_PREV    &kp C_NEXT       &kp LS(MINUS)    &kp KP_MINUS  &kp N7        &kp N8        &kp N9        &kp RPRN
-&kp TAB     &trans        &kp F4        &kp C_VOLUME_UP  &kp LS(EQUAL)    &kp KP_EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ENTER
-&to 0       &kp F1        &kp KP_SLASH  &kp STAR         &kp KP_DOT       &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&to 0       &kp LEFT_GUI                                                                                            &kp RALT      &to 0
+&kp ESCAPE   &kp C_PP      &kp C_PREV            &kp C_NEXT       &kp UNDER     &kp KP_MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&kp TAB      &trans        &kp C_VOL_DN          &kp C_VOLUME_UP  &kp PLUS      &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER
+&kp C_RESET  &kp STAR      &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC    &kp KP_DOT    &kp N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+&to 0        &kp LEFT_GUI                                                                                                       &kp RALT         &to 0
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                                    &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp K_BACK  &kp UP    &kp K_FORWARD  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &kp ENTER
+&trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans    &trans         &trans
+&to 0   &trans                                                          &trans         &to 1
             >;
         };
     };
