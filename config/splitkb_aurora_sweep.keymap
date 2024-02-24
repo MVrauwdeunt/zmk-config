@@ -47,26 +47,26 @@
             bindings = <
 &kp Q                       &kp W                 &kp F  &kp P  &kp B    &kp J  &kp L  &kp U           &kp Y            &td EXCLAMATION SQT
 &kp A                       &kp R                 &kp S  &kp T  &kp G    &kp M  &kp N  &kp E           &kp I            &kp O
-&kp Z                       &kp X                 &kp C  &kp D  &kp V    &kp K  &kp H  &td SEMI COMMA  &td COLON DOT    &td PIPE SLASH
+&kp Z                       &kp X                 &kp C  &kp D  &kp V    &kp K  &kp H  &td SEMI COMMA  &td COLON DOT    &td BACKSLASH SLASH
 &mt LC(LS(LEFT_ALT)) SPACE  &mt LSHIFT BACKSPACE                                                       &mt RCTRL ENTER  &to 1
             >;
         };
 
         Symbols {
             bindings = <
-&kp ESC    &kp AT          &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp STAR         &mt COLON SEMICOLON  &kp BACKSPACE
-&kp TAB    &kp EQUAL       &kp SQT   &trans    &trans       &kp BSLH   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE             &kp ENTER
-&kp TILDE  &kp A           &kp DQT   &trans    &trans       &kp LBKT   &kp LPAR        &kp RPAR         &kp RBKT             &to 3
-&to 0      &kp LEFT_SHIFT                                                                               &kp LEFT_ALT         &to 2
+&kp ESC    &kp HOME        &kp UP           &kp END           &kp INS          &kp CARET      &kp AMPS         &kp STAR   &td RPAR LPAR  &kp BACKSPACE
+&kp TAB    &kp LEFT        &kp DOWN         &kp RIGHT         &kp PAGE_UP      &kp BSLH       &td DLLR E       &kp PRCNT  &kp CARET      &kp ENTER
+&kp TILDE  &kp DEL         &kp PRINTSCREEN  &kp LS(LEFT_ALT)  &kp PAGE_DOWN    &td RBKT LBKT  &kp EXCLAMATION  &kp AT     &kp HASH       &to 3
+&to 0      &kp LEFT_SHIFT                                                                                                 &kp LEFT_ALT   &to 2
             >;
         };
 
         Numbers {
             bindings = <
-&kp ESCAPE      &kp C_PP      &kp C_PREV            &kp C_NEXT       &kp UNDER     &kp KP_MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
-&kp TAB         &trans        &kp C_VOL_DN          &kp C_VOLUME_UP  &kp PLUS      &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER
-&kp KP_NUMLOCK  &kp STAR      &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC    &kp KP_DOT    &kp N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
-&to 0           &kp LEFT_GUI                                                                                                       &kp RALT         &to 0
+&kp ESCAPE      &kp C_PP      &kp C_PREV            &kp C_NEXT       &kp MINUS        &kp PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&kp TAB         &trans        &kp C_VOL_DN          &kp C_VOLUME_UP  &kp KP_DIVIDE    &kp KP_EQUAL  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER
+&kp KP_NUMLOCK  &kp STAR      &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC    &kp STAR         &kp N0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
+&to 0           &kp LEFT_GUI                                                                                                          &kp RALT         &to 0
             >;
         };
 
