@@ -38,10 +38,11 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        // euro sign
+        ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
     };
 
-// euro sign
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
+
 
     keymap {
         compatible = "zmk,keymap";
