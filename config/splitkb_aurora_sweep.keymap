@@ -8,9 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-// euro sign
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
-
 // 17 + 6 LEDs, from https://docs.splitkb.com/hc/en-us/articles/6485468787100-Aurora-Sweep-schematics
 
 &led_strip { chain-length = <23>; };
@@ -44,7 +41,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
     };
 
 // euro sign
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
+ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
 
     keymap {
         compatible = "zmk,keymap";
