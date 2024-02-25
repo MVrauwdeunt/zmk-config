@@ -61,7 +61,7 @@
 &kp Q                       &kp W                 &kp F  &kp P  &kp B    &kp J  &kp L  &kp U           &kp Y            &td EXCLAMATION SQT
 &kp A                       &kp R                 &kp S  &kp T  &kp G    &kp M  &kp N  &kp E           &kp I            &kp O
 &kp Z                       &kp X                 &kp C  &kp D  &kp V    &kp K  &kp H  &td SEMI COMMA  &td COLON DOT    &td BACKSLASH SLASH
-&mt LC(LS(LEFT_ALT)) SPACE  &mt LSHIFT BACKSPACE                                                       &mt RCTRL ENTER  &to 1
+&mt LSHIFT BACKSPACE  &mt LC(LS(LEFT_ALT)) SPACE                                                       &mt RCTRL ENTER  &to 1
             >;
         };
 
@@ -70,7 +70,7 @@
 &kp ESC    &kp HOME                  &kp UP           &kp END       &kp INS              &kp CARET                       &kp AMPS         &kp STAR   &td RPAR LPAR   &kp BACKSPACE
 &kp TAB    &kp LEFT                  &kp DOWN         &kp RIGHT     &kp PAGE_UP          &kp BSLH                        &kp DOLLAR       &kp PRCNT  &kp CARET       &kp ENTER
 &kp TILDE  &kp DELETE                &kp PRINTSCREEN  &kp LEFT_ALT  &kp LS(PAGE_DOWN)    &td RIGHT_BRACKET LEFT_BRACKET  &kp EXCLAMATION  &kp AT     &kp HASH        &to 3
-&to 0      &mt LEFT_SHIFT BACKSPACE                                                                                                             &mt LEFT_SHIFT ENTER &to 2
+&to 0      &mt LC(LS(LEFT_ALT)) SPACE                                                                                                           &mt LEFT_SHIFT ENTER &to 2
             >;
         };
 
