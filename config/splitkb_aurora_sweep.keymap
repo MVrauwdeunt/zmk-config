@@ -11,7 +11,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 // 17 + 6 LEDs, from https://docs.splitkb.com/hc/en-us/articles/6485468787100-Aurora-Sweep-schematics
-
 //&led_strip { chain-length = <23>; };
 
 &mt {
@@ -93,10 +92,10 @@
 
         System {
             bindings = <
-&rgb_ug RGB_EFF  &trans                      &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 3  &trans  &trans  &trans  &out OUT_BLE
-&rgb_ug RGB_EFR  &trans                      &trans  &trans  &bt BT_SEL 1    &bt BT_SEL 4  &kp T   &trans  &trans  &out OUT_USB
-&rgb_ug RGB_TOG  &trans                      &trans  &trans  &bt BT_SEL 2    &bt BT_CLR    &trans  &trans  &trans  &out OUT_TOG
-&to 0            &mt LC(LS(LEFT_ALT)) SPACE                                                                &trans  &trans
+&rgb_ug RGB_EFF  &trans                      &trans  &trans  &bt BT_SEL 0    &bt BT_SEL 3    &trans  &trans  &trans  &out OUT_BLE
+&rgb_ug RGB_EFR  &trans                      &trans  &trans  &bt BT_SEL 1    &bt BT_SEL 4    &kp T   &trans  &trans  &out OUT_USB
+&rgb_ug RGB_TOG  &trans                      &trans  &trans  &bt BT_SEL 2    &bt BT_CLR_ALL  &trans  &trans  &trans  &out OUT_TOG
+&to 0            &mt LC(LS(LEFT_ALT)) SPACE                                                                  &trans  &trans
             >;
         };
     };
