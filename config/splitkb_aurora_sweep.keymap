@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 // 17 + 6 LEDs, from https://docs.splitkb.com/hc/en-us/articles/6485468787100-Aurora-Sweep-schematics
-//&led_strip { chain-length = <23>; };
+&led_strip { chain-length = <23>; };
 
 &mt {
     //  flavor = "tap-preferred";
