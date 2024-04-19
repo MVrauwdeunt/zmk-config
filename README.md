@@ -17,3 +17,15 @@ This configuration is tailored specifically to my preferences and needs, impleme
 | 12 x  | 5050 LED's | I bought a bunch of LED's SK6812 WS2812B only 6 per board are needed for the underglow |
 | 34 x  | SK6812 LED's | Again just bought a rol of about 50 these can be used to add RGB backlighting |
 | 34 x  | Keycaps | I opted for [FKCaps keycaps](https://fkcaps.com/) in the MBK style |
+
+## Keymaps
+
+| Code | Function | Descripsion |
+| -----|----------|-------------|
+| &td  | TapDance | First key on longer tap, second key on short tap |
+| &mt  | ModTap   | Modifier on longer tap, second key on short tap |
+| &kp  | KeyPress   | Press selected key |
+
+There are several layers to start with the Base layer
+![](images/base.png)
+This layer holds the alpha keys some punctuation 
