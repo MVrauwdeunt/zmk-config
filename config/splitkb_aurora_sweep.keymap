@@ -88,6 +88,7 @@
         };
 
         layer_3 {
+            label = "Functions";
             bindings = <
 &rgb_ug RGB_TOG  &trans                      &trans  &trans  &trans    &trans  &kp K_BACK  &kp UP    &kp K_FORWARD  &kp BACKSPACE
 &rgb_ug RGB_EFF  &trans                      &trans  &trans  &trans    &trans  &kp LEFT    &kp DOWN  &kp RIGHT      &kp ENTER
@@ -97,6 +98,7 @@
         };
 
         System {
+            label = "System";
             bindings = <
 &rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,96,50)     &rgb_ug RGB_COLOR_HSB(188,100,50)  &rgb_ug RGB_BRI                   &none    &bt BT_CLR    &bt BT_CLR_ALL  &out OUT_BLE  &out OUT_USB  &out OUT_TOG
 &rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(118,100,50)  &rgb_ug RGB_COLOR_HSB(60,100,50)   &rgb_ug RGB_BRD                   &none    &bt BT_CLR    &bt BT_CLR_ALL  &out OUT_BLE  &out OUT_USB  &out OUT_TOG
