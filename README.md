@@ -28,4 +28,13 @@ This configuration is tailored specifically to my preferences and needs, impleme
 
 There are several layers to start with the Base layer
 ![](images/base.png)
-This layer holds the alpha keys some punctuation 
+This layer holds the alpha keys some punctuation
+The 4 thumbkeys are 
+
+| Left inner | Left outer | Right outer | Right inner |
+|------------|------------|-------------|-------------|
+| Hold SHIFT | Hold MEH * | Hold CTRL   | To LAYER 2  |
+| tap backspace | Tap Space | Tap ENTER |             |
+
+All keys can be used with the shift key.
+The , (comma) and . (dot) keys
