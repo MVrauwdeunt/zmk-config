@@ -28,7 +28,7 @@ This configuration is tailored specifically to my preferences and needs, impleme
 
 There are several layers to start with the Base layer
 ![](images/base.png)
-This layer holds the alpha keys some punctuation
+This layer holds the alpha keys and some punctuation
 The 4 thumbkeys are 
 
 | Left inner | Left outer | Right outer | Right inner |
