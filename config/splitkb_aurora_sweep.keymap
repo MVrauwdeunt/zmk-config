@@ -12,6 +12,9 @@
 
 &nice_view_spi { cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>; };
 
+// euro sign
+ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
+
 // 17 + 6 LEDs, from https://docs.splitkb.com/hc/en-us/articles/6485468787100-Aurora-Sweep-schematics
 
 &led_strip { chain-length = <23>; };
