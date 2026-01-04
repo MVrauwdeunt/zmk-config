@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 //#include "../zmk-nodefree-config/helper.h"
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -14,7 +15,6 @@
 
 // euro sign
 //ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
-
 // 17 + 6 LEDs, from https://docs.splitkb.com/hc/en-us/articles/6485468787100-Aurora-Sweep-schematics
 
 &led_strip { chain-length = <23>; };
@@ -83,20 +83,20 @@
         Numbers {
             label = "Numbers";
             bindings = <
-&kp ESCAPE      &kp C_PP                    &kp C_PREV            &kp C_NEXT       &kp KP_NUMLOCK    &kp MINUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
-&kp TAB         &trans                      &kp C_VOL_DN          &kp C_VOLUME_UP  &kp KP_DIVIDE     &kp EQUAL   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_SHIFT
-&kp KP_NUMLOCK  &kp STAR                    &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC    &kp STAR          &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
-&to 0           &mt LC(LS(LEFT_ALT)) SPACE                                                                                                         &mt LCTRL ENTER  &to 3
+&kp ESCAPE       &kp C_PP                    &kp C_PREV            &kp C_NEXT       &kp KP_NUMLOCK    &kp MINUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp BACKSPACE
+&kp TAB          &kp C_MUTE                  &kp C_VOL_DN          &kp C_VOLUME_UP  &kp KP_DIVIDE     &kp EQUAL   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_SHIFT
+&kp PRINTSCREEN  &kp STAR                    &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC    &kp STAR          &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0
+&to 0            &mt LC(LS(LEFT_ALT)) SPACE                                                                                                         &mt LCTRL ENTER  &to 3
             >;
         };
 
         System {
             label = "System";
             bindings = <
-&rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,96,50)     &rgb_ug RGB_COLOR_HSB(188,100,50)  &rgb_ug RGB_BRI                   &none    &bt BT_CLR    &bt BT_CLR_ALL  &out OUT_BLE  &out OUT_USB  &out OUT_TOG
-&rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(118,100,50)  &rgb_ug RGB_COLOR_HSB(60,100,50)   &rgb_ug RGB_BRD                   &none    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(254,100,50)  &rgb_ug RGB_COLOR_HSB(307,100,50)  &rgb_ug RGB_COLOR_HSB(35,100,50)  &none    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&to 0            &mt LC(LS(LEFT_ALT)) SPACE                                                                                                                                   &trans        &to 4
+&rgb_ug RGB_EFF  &rgb_ug RGB_COLOR_HSB(0,96,50)     &rgb_ug RGB_COLOR_HSB(188,100,50)  &rgb_ug RGB_BRD                   &rgb_ug RGB_BRI    &none         &none         &out OUT_BLE  &out OUT_USB  &out OUT_TOG
+&rgb_ug RGB_EFR  &rgb_ug RGB_COLOR_HSB(118,100,50)  &rgb_ug RGB_COLOR_HSB(60,100,50)   &rgb_ug RGB_COLOR_HSB(160,99,50)  &none              &none         &none         &none         &none         &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(254,100,50)  &rgb_ug RGB_COLOR_HSB(307,100,50)  &rgb_ug RGB_COLOR_HSB(35,100,50)  &none              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&to 0            &mt LC(LS(LEFT_ALT)) SPACE                                                                                                                                           &trans        &to 4
             >;
         };
 
